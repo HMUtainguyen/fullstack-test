@@ -1,0 +1,84 @@
+.background {
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    background-color: #2E2E2E;
+
+    .imageBackground {
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .login {
+        width: 315px;
+        // padding: 30px;
+        margin: auto;
+
+        .inputLogin {
+            background-color: #ffff;
+            border-radius: 12px;
+        }
+    }
+
+    .forgotPassword {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+    }
+
+    .sendOTPTitle {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+    }
+
+    .sendOTP {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+    }
+
+    .backsenCode {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #9C9C9C;
+    }
+    .backsenCode:hover {
+        text-decoration: underline;
+    }
+
+    .forgotPassword:hover {
+        text-decoration: underline;
+    }
+    .inputOTP{
+        text-align: center;
+        margin-top: 16px;
+        div{
+            justify-content: space-between;
+            input{
+                height: 45px;
+                width: 35px !important;
+                border-radius: 8px;
+                border: 1px solid gray;
+                font-size: 16px !important;
+            }
+            input:focus-visible{
+                outline: 1px solid gray;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 821px) {
+    .layoutLeft {
+        display: none !important;
+    }
+}

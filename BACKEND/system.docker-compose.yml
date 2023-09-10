@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  mysqldb:
+    image: mysql:8
+    platform: ${MYSQL_PLATFORM}
+    command:  --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-authentication-plugin=mysql_native_password
+    ports:
+      - 3346:3306
+    volumes:
+      - mysqldata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: example_db
+    networks:
+      - base_net
+
+  adminer:
+    image: adminer
+    ports:
+      - 8480:8080
+    depends_on:
+      - mysqldb
+    networks:
+      - base_net
+
+  redis:
+    image: redis:6-alpine
+    ports:
+      - 6349:6379
+    volumes:
+      - redisdata:/data
+    networks:
+      - base_net
+
+volumes:
+  mysqldata:
+  redisdata:
+
+networks:
+  base_net:
+    driver: bridge

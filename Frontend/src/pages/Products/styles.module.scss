@@ -1,0 +1,67 @@
+@import 'assets/css/variable';
+.tableTitle {
+  margin: 0;
+}
+
+.buttonSearch {
+  margin-top: 19px;
+}
+
+.actionsButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.parentRow {
+  cursor: pointer;
+}
+
+@media (max-width: 1735px) {
+  .stickyTableRow {
+    &.highLightRow {
+      .stickyTableCell {
+        background-color: $light-green;
+      }
+    }
+    &:hover {
+      .stickyTableCell {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+    }
+    .noContent {
+      background-color: $white;
+    }
+  }
+}
+
+@media (min-width: 1736px) {
+  .stickyTableRow {
+    &.highLightRow {
+      .stickyTableCell {
+        background-color: $light-green;
+      }
+    }
+    .stickyTableCell {
+      background-color: #ffffff;
+      &.highLightRow {
+        background-color: $light-green;
+      }
+    }
+    &:hover {
+      .stickyTableCell {
+        background-color: $gray-hover-table-cell;
+      }
+      .noContent {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.linkToDetail {
+  text-decoration: none;
+  color: $dark-green;
+  &:hover {
+    color: $light-green;
+  }
+}

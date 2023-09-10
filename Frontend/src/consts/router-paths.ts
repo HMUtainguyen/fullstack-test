@@ -1,0 +1,33 @@
+const ROUTERS_PATHS = {
+    LOGIN: '/login',
+    FORGOT_PASSWORD: '/forgot-password',
+    CONFIRM_FORGOT_PASSWORD: '/confirm-forgot-password',
+    NOT_FOUND: '/not-found',
+    DASHBOARD: '/',
+    RESETPASSWORD: '/reset-password',
+    MY_PROFILE: '/my-profile',
+    LIST_OF_EMPLOYEE: '/list-of-employee',
+    LIST_OF_USER: '/list-of-user',
+    LIST_OF_POSITIONS: '/list-of-positions',
+    STORE: '/store',
+    PRODUCTS: '/products',
+    PRODUCT_DETAIL: '/product-detail/:id',
+    PRODUCT_TYPES: '/product-types',
+    PRODUCT_TYPE_DETAIL: '/product-type-detail/:id',
+    STORE_EDIT: '/store/edit/:id',
+    LIST_OF_ORDER: '/order-list',
+    ORDER_DETAIL: '/order-list/:orderId',
+    PROCESS_ORDER: '/order-list/:orderId/process-order',
+    NEW: '/news',
+    NEW_DETAILS: '/news/:id',
+    ALL: '*',
+    CREATE_NEW_ORDER: '/create-new-order',
+    VIEW_ORDER: '/view-order/:id',
+    AUTHORIZATION: '/authorization',
+    //report:
+    REPORT_SALES_LIST : '/report-sales-list',
+    REPORT_PRODUCTS_LIST : '/report-products-list',
+    REPORT_CUSTOMERS_LIST : '/report-customers-list',
+};
+
+export default ROUTERS_PATHS;

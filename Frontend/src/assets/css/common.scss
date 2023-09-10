@@ -1,0 +1,246 @@
+@import './_variable.scss';
+
+body {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+//--- Bar icon
+.bar-icon {
+  display: inline-block;
+  width: 21px;
+
+  span {
+    background-color: white;
+    border-radius: 500px;
+    display: block;
+    float: left;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 21px;
+
+    &:nth-child(2) {
+      width: 15px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.MuiPopover-paper {
+  border-radius: 12px !important;
+}
+
+//--- Scroll Bar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #eaeaea;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6d6e70;
+}
+
+.is-require::after {
+  content: '*';
+  color: #de544f;
+  margin-left: 5px;
+}
+
+.optionLabelEmail {
+  color: rgb(168, 153, 153);
+}
+
+// Required
+.required::before {
+  content: '*';
+  color: red;
+  margin-left: 2px;
+}
+
+.background-table-header {
+  background-color: #e4e4e4 !important;
+  font-weight: 700 !important;
+  color: #614c4c !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-column-center {
+  flex-direction: column !important;
+  display: flex;
+  justify-content: space-evenly !important;
+}
+
+.d-flex-jus-center {
+  display: flex;
+  justify-content: center;
+}
+
+.d-flex-ali-center {
+  display: flex;
+  align-items: center;
+}
+
+.highlight-row {
+  background-color: $gray-highlight-row;
+}
+
+// .highlight-row > * {
+//   color: #ffffff !important;
+// }
+
+// .highlight-row:hover td {
+//   color: #000000 !important;
+// }
+
+.highlight-row > td > span.status {
+  color: #ffffff;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.pd-r-0 {
+  padding-right: 0 !important;
+}
+
+.pd-l-22 {
+  padding-left: 22px !important;
+}
+
+.pd-r-22 {
+  padding-right: 22px !important;
+}
+
+.pd-r-30 {
+  padding-right: 40px !important;
+}
+
+.pd-r-42 {
+  padding-right: 42px !important;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #614c4c;
+  margin-bottom: 24px;
+}
+
+.column-input-section {
+  .title {
+    font-weight: 700;
+    font-size: 12px;
+    color: #614c4c;
+    margin-bottom: 6px;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #614c4c;
+  margin-bottom: 12px;
+}
+
+.table-scroll-bar {
+  scrollbar-gutter: stable;
+}
+
+.mg-l-10 {
+  margin-left: 10px;
+}
+
+//--- Search by
+.search-by-container {
+  padding-top: 12px;
+  // padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+
+  .search-label {
+    margin-right: 5px;
+    font-size: 14px;
+    color: $gray;
+    display: flex;
+    align-items: flex-start;
+    min-width: 65px;
+  }
+
+  .MuiChip-root {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .clear-all {
+    font-size: 12px;
+    text-decoration: none;
+    margin-left: 10px;
+    color: $light-red;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//--- MUI Autocomplete Menu
+ul.MuiAutocomplete-listbox {
+  li.MuiAutocomplete-option {
+    color: $text;
+    font-size: 14px;
+  }
+}
+div.MuiAutocomplete-loading {
+  text-align: center;
+}
+div.MuiAutocomplete-noOptions {
+  text-align: center;
+}
+
+.autocompleteMultiSelect {
+  .MuiChip-root {
+    height: 23px;
+    font-size: 12px;
+    svg {
+      height: 15px;
+      width: 15px;
+    }
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  span.MuiAutocomplete-tag.MuiAutocomplete-tagSizeMedium {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+.messagaNoData {
+  opacity: 0.5;
+}

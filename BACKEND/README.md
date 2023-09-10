@@ -73,8 +73,6 @@ To run the server without Docker we need this pre-requisite:
 Commands:
 
 ```bash
-# run migration in window( create products schema first)
-$ npm run typeorm:win migration:run
 
 # development maybe need restart BE in first time run
 $ npm run start
@@ -127,6 +125,9 @@ $ npm run migration:generate -- -n CreateUsers
 
 # run migration
 $ npm run typeorm migration:run
+
+# run migration in window( create products schema first)
+$ npm run typeorm:win migration:run
 
 # revert migration
 $ npm run migration:revert
